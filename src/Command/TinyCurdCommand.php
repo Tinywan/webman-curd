@@ -16,15 +16,15 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 class TinyCurdCommand extends Command
 {
-    protected static $defaultName = 'curd';
-    protected static $defaultDescription = 'curd';
+    protected static $defaultName = 'tiny:curd';
+    protected static $defaultDescription = 'tiny:curd';
 
     /**
      * @return void
      */
     protected function configure()
     {
-        $this->addArgument('name', InputArgument::OPTIONAL, 'Name description');
+        $this->addArgument('name', InputArgument::OPTIONAL, 'Name tiny:curd description');
     }
 
     /**
@@ -35,7 +35,7 @@ class TinyCurdCommand extends Command
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $name = $input->getArgument('name');
-        $output->writeln('Hello curd');
+        $output->writeln('Hello tiny:curd ');
         return self::SUCCESS;
     }
 }
