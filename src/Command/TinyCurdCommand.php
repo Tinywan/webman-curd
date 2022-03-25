@@ -14,7 +14,7 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class CurdCommand extends Command
+class TinyCurdCommand extends Command
 {
     protected static $defaultName = 'curd';
     protected static $defaultDescription = 'curd';
