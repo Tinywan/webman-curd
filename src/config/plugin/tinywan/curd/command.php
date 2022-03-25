@@ -5,5 +5,5 @@
  * @date 2022/3/25 13:50
  */
 return [
-    \Tinywan\Curd\Command::class,
+    \Tinywan\Curd\Command\CurdCommand::class,
 ];
